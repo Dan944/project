@@ -1,6 +1,0 @@
-classes= 80
-train=/home/featurize/data/trainvalno5k.txt
-valid=/home/featurize/data/5k.txt
-names=data/coco.names
-backup=backup/
-eval=coco

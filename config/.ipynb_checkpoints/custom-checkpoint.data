@@ -1,6 +1,0 @@
-classes= 20
-train=data/custom/train.txt
-valid=data/custom/train.txt
-names=data/custom/classes.names
-backup=backup/
-eval=costom
