@@ -15,15 +15,7 @@ Based on a Pytorch implementation of YOLOv3, prompt three improvement for YOLOv3
     
 ## Test
 Evaluates the model on COCO test.
-
     $ python test.py --weights_path weights/yolov3.weights
-
-| Model                   | mAP (min. 50 IoU) |
-| ----------------------- |:-----------------:|
-| YOLOv3 608 (paper)      | 57.9              |
-| YOLOv3 608 (this impl.) | 57.3              |
-| YOLOv3 416 (paper)      | 55.3              |
-| YOLOv3 416 (this impl.) | 55.5              |
 
 ## Inference
 Uses pretrained weights to make predictions on images. Below table displays the inference times when using as inputs images scaled to 256x256. The ResNet backbone measurements are taken from the YOLOv3 paper. The Darknet-53 measurement marked shows the inference time of this implementation on my 1080ti card.
@@ -85,21 +77,6 @@ $ python3 train.py --data_config config/coco.data  --pretrained_weights weights/
 Total Loss 4.429395
 ---- ETA 0:35:48.821929
 ```
-
-#### Tensorboard
-Track training progress in Tensorboard:
-* Initialize training
-* Run the command below
-* Go to http://localhost:6006/
-
-```
-$ tensorboard --logdir='logs' --port=6006
-```
-
-Storing the logs on a slow drive possibly leads to a significant training speed decrease.
-
-You can adjust the log directory using `--logdir <path>` when running `tensorboard` or the `train.py`.
-
 ## Train on Custom Dataset
 
 #### Custom model
