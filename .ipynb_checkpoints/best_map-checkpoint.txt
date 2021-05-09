@@ -1,1 +1,0 @@
-mAP:0.08395020855696388, checkpoints/yolov3_ckpt_98.pth
