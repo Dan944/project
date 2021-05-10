@@ -1,1 +1,0 @@
-mAP:0.2789788607440275, checkpoints_coco/yolov3_ckpt_28.pth
