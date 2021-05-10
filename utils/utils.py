@@ -240,7 +240,7 @@ def bbox_iou(box1, box2, x1y1x2y2=True):
     a = v / (1- iou + v + 1e-16)
     ciou = diou - a*v
 
-    return iou
+    return ciou
 
 
 def non_max_suppression(prediction, conf_thres=0.5, nms_thres=0.4, conf_thres_strong=0.9, conf_thres_weak=0.5):
