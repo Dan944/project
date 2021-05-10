@@ -15,10 +15,12 @@ Based on a Pytorch implementation of YOLOv3, prompt three improvement for YOLOv3
 
     
 ## Running on COCO
+
 ##### Result show
-    <p align="center"><img src="examples/example1.png" width="480"\></p>
-    <p align="center"><img src="examples/example2.png" width="480"\></p>
-    <p align="center"><img src="examples/example3.png" width="480"\></p>
+<p align="center"><img src="examples/example1.png" width="480"\></p>
+<p align="center"><img src="examples/example2.png" width="480"\></p>
+<p align="center"><img src="examples/example3.png" width="480"\></p>
+
 ##### Download pretrained weights
     $ cd weights/
     $ bash download_weights.sh
@@ -29,27 +31,10 @@ Based on a Pytorch implementation of YOLOv3, prompt three improvement for YOLOv3
     $ bash get_coco_dataset.sh
 ##### Evaluates the model on COCO test.
     $ python test.py --weights_path weights/yolov3.weights
+##### For further training
+    $ python train.py --model_def config/yolov3.cfg --data_conig config/coco.data
     
-## Test
-
-
-## Inference
-##### Run this code to detect the files in data/samples
-    $ python3 detect.py
-
-
-## Train
-```
-$ train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]
-                [--gradient_accumulations GRADIENT_ACCUMULATIONS]
-                [--model_def MODEL_DEF] [--data_config DATA_CONFIG]
-                [--pretrained_weights PRETRAINED_WEIGHTS] [--n_cpu N_CPU]
-                [--img_size IMG_SIZE]
-                [--checkpoint_interval CHECKPOINT_INTERVAL]
-                [--evaluation_interval EVALUATION_INTERVAL]
-                [--compute_map COMPUTE_MAP]
-                [--multiscale_training MULTISCALE_TRAINING]
-```
+    
 
 ## Train on Custom Dataset
 
