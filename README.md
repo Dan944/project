@@ -1,5 +1,6 @@
 # Final project of Wang Shuai
-Based on a Pytorch implementation of YOLOv3, prompt three improvement for YOLOv3
+Based on a Pytorch implementation of YOLOv3, prompt three improvement for YOLOv3.  
+If any problems met, please e-mail to sc17s2w@leeds.ac.uk with no hesitation.
 
 
 ## Prepare work
