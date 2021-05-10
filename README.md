@@ -1,28 +1,42 @@
 # Final project of Wang Shuai
 Based on a Pytorch implementation of YOLOv3, prompt three improvement for YOLOv3
 
-## Installation
+
+## Prepare work
 ##### Clone and install requirements
     $ git clone https://github.com/Dan944/project
 
+##### Set the environment
+    $ pip install -r requirements.txt
+    
+##### Strongly recommand setting CUDA and CUDNN for GPU training
+
+
+
+    
+## Running on COCO
+##### Result show
+    <p align="center"><img src="examples/example1.png" width="480"\></p>
+    <p align="center"><img src="examples/example2.png" width="480"\></p>
+    <p align="center"><img src="examples/example3.png" width="480"\></p>
 ##### Download pretrained weights
     $ cd weights/
     $ bash download_weights.sh
-
-##### Download COCO
+##### Detect the image in samples
+    $ python3 detect.py
+##### Download COCO dataset
     $ cd data/
     $ bash get_coco_dataset.sh
+##### Evaluates the model on COCO test.
+    $ python test.py --weights_path weights/yolov3.weights
     
 ## Test
-Evaluates the model on COCO test.
-    $ python test.py --weights_path weights/yolov3.weights
+
 
 ## Inference
-Run this code to detect the files in data/samples
+##### Run this code to detect the files in data/samples
     $ python3 detect.py
-<p align="center"><img src="examples/example1.png" width="480"\></p>
-<p align="center"><img src="examples/example2.png" width="480"\></p>
-<p align="center"><img src="examples/example3.png" width="480"\></p>
+
 
 ## Train
 ```
