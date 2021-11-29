@@ -18,7 +18,7 @@ If any problems met, please e-mail to sc17s2w@leeds.ac.uk with no hesitation.
 ## Running on COCO
 
 ##### Result show
-<p align="center"><img src="examples/example1.png" width="480"\></p>
+<p align="center"><img src="yolov4-tiny-improved/show/permformance" width="480"\></p>
 <p align="center"><img src="examples/example2.png" width="480"\></p>
 <p align="center"><img src="examples/example3.png" width="480"\></p>
 
